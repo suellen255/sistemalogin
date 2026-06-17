@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #fff8fd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container{
+            background-color: rgb(255, 188, 238);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            width: 350px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        a{
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #59004f;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        a:hover{
+            background-color: #430037;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Área Restrita</h1>
+
+        <p>Bem-vindo, {{ usuario }}!</p>
+
+        <a href="{{ url_for('logout') }}">Sair</a>
+    </div>
+
+</body>
+</html>
+

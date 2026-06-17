@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: #fff0f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container{
+            background: #ffd6e8;
+            padding: 35px;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(255, 105, 180, 0.2);
+        }
+
+        h1{
+            color: #c2185b;
+            margin-bottom: 15px;
+        }
+
+        a{
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 24px;
+            background: #ff69b4;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        a:hover{
+            background: #e91e63;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Bem-vindo {{nome}} </h1>
+
+        <a href="pag.login.html">
+            Clique aqui para ir para a página de login
+        </a>
+    </div>
+
+</body>
+</html>
